@@ -7,8 +7,11 @@ Install [ngrok](https://ngrok.com) to your system.
 Set OSO_PATH environment in .env file.
 
 ## Run app
-
-```rails s```
+```
+yarn install
+bundle install
+rails s
+```
 
 ## Use app
 
