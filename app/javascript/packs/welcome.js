@@ -26,6 +26,10 @@ $(document).ready(function() {
       $( "#run-command" ).prop( "disabled", false );
       $( "#run-command" ).html("Run");
 
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#command-output").offset().top
+      }, 2000);
+
       $("#command-line").val(data.result);
       $("#command-line").height("100px");
 

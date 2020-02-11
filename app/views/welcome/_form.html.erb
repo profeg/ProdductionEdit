@@ -1,0 +1,16 @@
+<form>
+  <h3>Settings</h3>
+
+  <%= render 'environment_select' %>
+  <%= render 'project_select' %>
+
+  <h3>Variables</h3>
+  <%= render 'output_checkbox' %>
+  <%= render 'wait_checkbox' %>
+  <%= render 'without_logs_checkbox' %>
+
+  <%= render 'code_input' %>
+  <button type="button" class="btn btn-primary run-button" id="run-command">
+    Run
+  </button>
+</form>
