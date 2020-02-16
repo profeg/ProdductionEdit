@@ -15,8 +15,11 @@ require("@rails/activestorage").start()
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-import "jquery"
-import "bootstrap"
-import "select2"
-import "../stylesheets/application"
-import "./welcome"
+import "jquery";
+import "bootstrap";
+import "select2";
+import "codemirror";
+import "codemirror/mode/ruby/ruby";
+import "../stylesheets/application";
+import "./welcome";
+import "./code_mirror";

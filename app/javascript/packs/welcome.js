@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     var environment = $("#environment-input").val();
     var project = $("#project-input").val();
-    var command = $("#code-input").val();
+    var command = window.myCodeMirror.getValue();
 
     var data = {
       wait: $("#wait").prop("checked"),
@@ -39,5 +39,4 @@ $(document).ready(function() {
       }
     });
   });
-
 });

@@ -6,6 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script type="text/javascript">
+      var commands = "<%= raw(escape_javascript(@commands)) %>";
+      window.commands = commands;
+    </script>
+
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </head>
